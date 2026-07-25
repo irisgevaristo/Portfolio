@@ -1,5 +1,14 @@
-html {
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c16384;
+    color: #fcf5f5;
+    overflow-y: auto;
 }
 
 * {
@@ -9,31 +18,27 @@ html {
     font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-    background-color: #c16384;
-    color: #fcf5f5;
-    overflow-y: scroll;
-}
 
-/* --- TOP BAR --- */
-
-.top-bar {
+/* --- NAV BAR --- */
+.nav-bar {
     position: fixed;
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    padding: 10px 70px;
+    padding: 10px 5%;
     border-radius: 60px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 100;
     
     display: flex;
-    gap: 80px;
+    gap: 4vw;
+    max-width: 90vw;
+    width: max-content;
 }
 
-.top-bar a {
+.nav-bar a {
     color: #fcf5f5;
     text-decoration: none;
     font-weight: 600;
@@ -42,11 +47,9 @@ body {
     white-space: nowrap;
 }
 
-.top-bar a:hover {
+.nav-bar a:hover {
     color: #310011;
 }
-
-
 
 /* --- HOME SECTION --- */
 .main-content {
@@ -59,14 +62,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background-size: cover;
     background-position: center;
 }
 
 .main-image {
-    width: 1000px;
-    height: 500px;
+    max-width: 1000px;
+    width: 90%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -79,7 +82,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 5% 4%;
+    width: 100%;
 }
 
 .stars1-trail-overlay {
@@ -87,7 +91,8 @@ body {
     top: -320px;
     left: 50%;
     transform: translateX(-50%);
-    width: 900px;
+    max-width: 900px;
+    width: 90vw;
     height: auto;
     z-index: 5;
     pointer-events: none;
@@ -112,23 +117,9 @@ body {
     text-align: left;
 }
 
-.aligned-content h2 {
-    font-size: 3rem;
-    margin: 0;
-    color: #fcf5f5;
-}
-
-.aligned-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #f0b5ca;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .contact-grid {
     display: flex;
-    gap: 100px;
+    gap: 5vw;
     width: 100%;
     align-items: flex-start;
 }
@@ -148,7 +139,11 @@ body {
 }
 
 .contact-left p {
-    margin-top: 25px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0b5ca;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-right {
@@ -156,14 +151,14 @@ body {
 }
 
 .profile-photo {
-    height: 7.2rem;       /* 3rem (tamanho da fonte) * 1.2 (line-height) * 2 (linhas) = 7.2rem de altura */
+    height: 7.2rem;
     width: 100px;
     object-fit: cover;
     margin-bottom: 25px;
     border-radius: 50%;
 }
 
-.info-list {
+.contact-list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -171,7 +166,7 @@ body {
     gap: 15px;
 }
 
-.info-list li {
+.contact-list li {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -180,44 +175,23 @@ body {
     color: #fcf5f5;
 }
 
-.info-list a {
+.contact-list a {
     color: #fcf5f5;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-
-.info-list a:hover {
+.contact-list a:hover {
     color: #c16384;
-
 }
 
-.info-icon {
+.contact-icon {
     font-size: 1.2rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 24px;
 }
-
-/*.floating-button {
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    color: #fcf5f5;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 0.85rem;
-    font-weight: bold;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: transform 0.2s, background-color 0.2s;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.floating-button:hover {
-    transform: translateY(-3px);
-    color: #310011;
-}*/
 
 /* --- ABOUT ME SECTION --- */
 .about-me-section {
@@ -226,8 +200,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 5% 4%;
     padding-top: 140px;
+    width: 100%;
 }
 
 .stars2-trail-overlay {
@@ -235,7 +210,8 @@ body {
     top: -380px;
     left: 45%;
     transform: translateX(-50%);
-    width: 900px;
+    max-width: 900px;
+    width: 90vw;
     height: auto;
     z-index: 5;
     pointer-events: none;
@@ -243,7 +219,7 @@ body {
 
 .about-grid {
     display: flex;
-    gap: 100px;
+    gap: 4vw;
     width: 100%;
     align-items: flex-start;
 }
@@ -258,7 +234,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 
 .about-left h3, .about-right h3 {
@@ -289,7 +265,7 @@ body {
 }
 
 .timeline-star {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #310011;
     line-height: 1;
     z-index: 2;
@@ -312,7 +288,7 @@ body {
 
 .timeline-year {
     font-family: Georgia, serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #fcf5f5;
     width: 130px;
@@ -321,14 +297,15 @@ body {
 }
 
 .timeline-details h4 {
-    font-size: 1.1rem;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
     color: #fcf5f5;
     font-weight: 600;
     margin-bottom: 4px;
 }
 
 .timeline-details p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #f0b5ca;
     margin: 0;
 }
@@ -348,9 +325,9 @@ body {
 }
 
 .hobby-item p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.3;
-    color: #fcf5f5;
+    color: #f0b5ca;
     margin: 0;
 }
 
@@ -370,6 +347,7 @@ body {
 }
 
 .skills-list li {
+    font-size: 1rem;
     background-color: #f0b5ca;
     color: #c16384;
     padding: 10px 20px;
@@ -390,13 +368,13 @@ body {
 
 .lang-item h4 {
     font-family: Georgia, serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #fcf5f5;
     margin-bottom: 5px;
 }
 
 .lang-item p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #f0b5ca;
     margin: 0;
 }
@@ -405,13 +383,10 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 60px;
-}
-
-.about-footer {
     color: #fcf5f5;
     font-family: Georgia, serif;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: transform 0.2s, background-color 0.2s;
     display: block;
@@ -420,4 +395,62 @@ body {
 .about-footer:hover {
     transform: translateY(-3px);
     color: #310011;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-bar {
+        width: 92%;
+        padding: 10px 15px;
+        gap: 15px;
+        top: 15px;
+        justify-content: center;
+    }
+
+    .nav-bar a {
+        font-size: 1rem;
+    }
+
+    .contact-me-section,
+    .about-me-section {
+        padding: 80px 20px 40px 20px;
+        min-height: auto;
+    }
+
+    .contact-grid,
+    .about-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .stars1-trail-overlay,
+    .stars2-trail-overlay {
+        width: 100%;
+        max-width: 100vw;
+        top: -120px;
+    }
+
+    .timeline-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .timeline-year {
+        width: auto;
+    }
+
+    .languages-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contact-left h2{
+        font-size: 2.2rem;
+    }
+
+    .about-left h3,
+    .about-right h3 {
+        font-size: 1.8rem;
+    }
 }
