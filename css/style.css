@@ -397,7 +397,104 @@ body {
     color: #310011;
 }
 
+/* --- PROJECTS SECTION --- */
+.projects-section {
+    min-height: 100vh;
+    padding: 140px 4% 60px 4%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.projects-title {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: #fcf5f5;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+}
+
+.project-card {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    background-color: #310011;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(240, 181, 202, 0.5);
+}
+
+.project-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-content {
+    flex: 2;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-content h3 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    color: #fcf5f5;
+    margin-bottom: 20px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-tech span {
+    background-color: #f0b5ca;
+    color: #310011;
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.project-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f0b5ca;
+}
+
+.project-image {
+    flex: 1;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
 
 @media (max-width: 768px) {
     .nav-bar {
@@ -452,5 +549,31 @@ body {
     .about-left h3,
     .about-right h3 {
         font-size: 1.8rem;
+    }
+
+    .projects-section {
+        padding-top: 100px;
+    }
+
+    .projects-title {
+        font-size: 2.2rem;
+    }
+
+    .project-card,
+    .project-card:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .project-image-wrapper {
+        height: 200px;
+        min-height: auto;
+    }
+
+    .project-content {
+        padding: 25px 20px;
+    }
+
+    .project-content h3 {
+        font-size: 1.6rem;
     }
 }
