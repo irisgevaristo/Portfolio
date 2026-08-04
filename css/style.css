@@ -6,8 +6,8 @@ html, body {
 }
 
 body {
-    background-color: #c16384;
-    color: #fcf5f5;
+    background-color: #444444;
+    color: #fffaf5;
     overflow-y: auto;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .nav-bar a {
-    color: #fcf5f5;
+    color: #fffaf5;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.4rem;
@@ -48,7 +48,7 @@ body {
 }
 
 .nav-bar a:hover {
-    color: #310011;
+    color: #e0d7cc;
 }
 
 /* --- HOME SECTION --- */
@@ -78,7 +78,7 @@ body {
 .contact-me-section {
     position: relative;
     min-height: 100vh;
-    background-color: #310011;
+    background-color: #fffaf5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ body {
 
 .stars1-trail-overlay {
     position: absolute;
-    top: -320px;
+    top: -500px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 900px;
@@ -96,6 +96,7 @@ body {
     height: auto;
     z-index: 5;
     pointer-events: none;
+    zoom: 0.3
 }
 
 .stars1-trail-overlay, .stars2-trail-overlay {
@@ -134,14 +135,14 @@ body {
     font-family: Georgia, serif;
     font-size: 3rem;
     line-height: 1.2;
-    color: #fcf5f5;
+    color: #0e0d0d;
     margin: 0;
 }
 
 .contact-left p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #f0b5ca;
+    color: #444444;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -172,17 +173,17 @@ body {
     gap: 12px;
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #fcf5f5;
+    color: #444444;
 }
 
 .contact-list a {
-    color: #fcf5f5;
+    color: #444444;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-list a:hover {
-    color: #c16384;
+    color: #0e0d0d;
 }
 
 .contact-icon {
@@ -207,7 +208,7 @@ body {
 
 .stars2-trail-overlay {
     position: absolute;
-    top: -380px;
+    top: -500px;
     left: 45%;
     transform: translateX(-50%);
     max-width: 900px;
@@ -215,6 +216,7 @@ body {
     height: auto;
     z-index: 5;
     pointer-events: none;
+    zoom: 0.3
 }
 
 .about-grid {
@@ -240,7 +242,7 @@ body {
 .about-left h3, .about-right h3 {
     font-family: Georgia, serif;
     font-size: 2.2rem;
-    color: #fcf5f5;
+    color: #0e0d0d;
     margin-bottom: 20px;
 }
 
@@ -266,7 +268,7 @@ body {
 
 .timeline-star {
     font-size: 1.5rem;
-    color: #310011;
+    color: #0e0d0d;
     line-height: 1;
     z-index: 2;
 }
@@ -290,7 +292,7 @@ body {
     font-family: Georgia, serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fcf5f5;
+    color: #fffaf5;
     width: 130px;
     flex-shrink: 0;
     line-height: 1.2;
@@ -299,14 +301,14 @@ body {
 .timeline-details h4 {
     font-family: Georgia, serif;
     font-size: 1.2rem;
-    color: #fcf5f5;
+    color: #fffaf5;
     font-weight: 600;
     margin-bottom: 4px;
 }
 
 .timeline-details p {
     font-size: 1rem;
-    color: #f0b5ca;
+    color: #fffaf5;
     margin: 0;
 }
 
@@ -327,7 +329,7 @@ body {
 .hobby-item p {
     font-size: 1rem;
     line-height: 1.3;
-    color: #f0b5ca;
+    color: #fffaf5;
     margin: 0;
 }
 
@@ -348,8 +350,8 @@ body {
 
 .skills-list li {
     font-size: 1rem;
-    background-color: #f0b5ca;
-    color: #c16384;
+    background-color: #fffaf5;
+    color: #444444;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
@@ -369,13 +371,13 @@ body {
 .lang-item h4 {
     font-family: Georgia, serif;
     font-size: 1.2rem;
-    color: #fcf5f5;
+    color: #fffaf5;
     margin-bottom: 5px;
 }
 
 .lang-item p {
     font-size: 1rem;
-    color: #f0b5ca;
+    color: #fffaf5;
     margin: 0;
 }
 
@@ -383,7 +385,7 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 60px;
-    color: #fcf5f5;
+    color: #fffaf5;
     font-family: Georgia, serif;
     text-decoration: none;
     font-size: 1.2rem;
@@ -394,7 +396,7 @@ body {
 
 .about-footer:hover {
     transform: translateY(-3px);
-    color: #310011;
+    color: #e0d7cc;
 }
 
 /* --- PROJECTS SECTION --- */
@@ -409,7 +411,7 @@ body {
 .projects-title {
     font-family: Georgia, serif;
     font-size: 3rem;
-    color: #fcf5f5;
+    color: #0e0d0d;
     margin-bottom: 40px;
 }
 
@@ -424,7 +426,7 @@ body {
     display: flex;
     text-decoration: none;
     color: inherit;
-    background-color: #310011;
+    background-color: #fffaf5;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -453,7 +455,7 @@ body {
 .project-content h3 {
     font-family: Georgia, serif;
     font-size: 2rem;
-    color: #fcf5f5;
+    color: #0e0d0d;
     margin-bottom: 20px;
 }
 
@@ -465,8 +467,8 @@ body {
 }
 
 .project-tech span {
-    background-color: #f0b5ca;
-    color: #310011;
+    background-color: #444444;
+    color: #fffaf5;
     padding: 5px 14px;
     border-radius: 15px;
     font-size: 0.85rem;
@@ -476,7 +478,7 @@ body {
 .project-content p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #f0b5ca;
+    color: #444444;
 }
 
 .project-image {
