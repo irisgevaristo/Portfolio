@@ -80,7 +80,7 @@ body {
 /* --- CONTACT ME SECTION --- */
 .contact-me-section {
     position: relative;
-    min-height: 70vh;
+    min-height: 50vh;
     background-color: #fffaf5;
     display: flex;
     justify-content: center;
@@ -118,14 +118,14 @@ body {
 */
 
 .aligned-content {
-    max-width: 1000px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     text-align: left;
 }
 
 .contact-grid {
     display: flex;
-    gap: 5vw;
+    gap: 15vw;
     width: 100%;
     align-items: flex-start;
 }
@@ -202,7 +202,6 @@ body {
 /* --- ABOUT ME SECTION --- */
 .about-me-section {
     position: relative;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +228,7 @@ body {
 
 .about-grid {
     display: flex;
-    gap: 4vw;
+    gap: 15vw;
     width: 100%;
     align-items: flex-start;
 }
